@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eduardo Dev</title>
+    <style>
+        body {background-color:whitesmoke ; color:black ; font:normal 20pt Arial;}
+    </style>
+</head>
+<body>
+    <h1>Aluno de JavaScript</h1>
+    <p>h1 é usado para título e p é usado para parágrafo</p>
+    <p>eu posso usar window.prompt para que apareça na tela uma caixa de diálogo e tambem window.comfirm para aparecer uma caixa de comfirmação</p>
+<script>
+    var nome = window.prompt('Qual é o nome do aluno?')
+    var idade = Number.parseInt(window.prompt('Qual é a idade do aluno?'))
+    var curso = 'JavaScript, HTML e CSS'
+    var data = '29/09/2023'
+    var preço = 199.99
+    document.write('O aluno(a) ' + nome + ' de idade ' + idade + ' anos, esta fazendo o curso de ' + curso + ', previsto para terminar em ' + data + '.</br>')
+    document.write(`O aluno(a) ${nome.toUpperCase()} de idade ${idade} anos, esta fazendo o curso de ${curso} , previsto para terminar em ${data}</br>`)
+    document.write('O nome em letras minusculas fica ' + nome.toLowerCase() + '.</br>')
+    document.write(`Valor total a pagar em reais é de ${preço.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})}.</br>`)
+    window.alert(`Faça o pagamento do valor ${preço.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})}`)
+
+</script> 
+</body>
+</html>

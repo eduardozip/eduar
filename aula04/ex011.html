@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eduardo Developer</title>
+    <style>
+        body {
+            background-color: black;
+            color:white;
+            font: normal 20pt Arial
+        }
+    </style>
+</head>
+<body>
+    <h1>Front-End Developer</h1>
+    <p>Criação e manutenção de sites especializados e atuais</p>
+    <script>
+        var nome = window.prompt('Qual é o nome do funcionário?')
+        document.write(`O nome ${nome} tem ${nome.length} letras.</br>`)
+        document.write(`O nome ${nome} em letras maiusculas fica ${nome.toUpperCase()}</br>`)
+        document.write(`O nome ${nome} em letras minúsculas fica ${nome.toLowerCase()}</br>`)
+        var salário =1199.18
+        document.write(`O seu salário mensal é de ${salário.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})}`)
+    </script>
+</body>
+</html>
